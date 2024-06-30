@@ -15,6 +15,10 @@
 		3E3DEAB62C2FD42100CA5999 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3DEAB52C2FD42100CA5999 /* HTTPMethod.swift */; };
 		3E3DEAB82C2FD44000CA5999 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3DEAB72C2FD44000CA5999 /* HTTPTask.swift */; };
 		3E3DEABA2C2FD45400CA5999 /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3DEAB92C2FD45400CA5999 /* HTTPHeader.swift */; };
+		3E3DEABC2C2FD4D600CA5999 /* URLRequest+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3DEABB2C2FD4D600CA5999 /* URLRequest+Encoding.swift */; };
+		3E3DEABE2C2FDDC000CA5999 /* GBNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3DEABD2C2FDDC000CA5999 /* GBNetworkError.swift */; };
+		3E3DEAC02C2FDE9200CA5999 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3DEABF2C2FDE9200CA5999 /* APIClient.swift */; };
+		3E3DEAC22C30426200CA5999 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3DEAC12C30426200CA5999 /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,10 @@
 		3E3DEAB52C2FD42100CA5999 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		3E3DEAB72C2FD44000CA5999 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
 		3E3DEAB92C2FD45400CA5999 /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		3E3DEABB2C2FD4D600CA5999 /* URLRequest+Encoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Encoding.swift"; sourceTree = "<group>"; };
+		3E3DEABD2C2FDDC000CA5999 /* GBNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBNetworkError.swift; sourceTree = "<group>"; };
+		3E3DEABF2C2FDE9200CA5999 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		3E3DEAC12C30426200CA5999 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +90,13 @@
 				3E3DEA9C2C2FD32300CA5999 /* GBNetwork.h */,
 				3E3DEA9D2C2FD32300CA5999 /* GBNetwork.docc */,
 				3E3DEAB32C2FD3A200CA5999 /* RequestType.swift */,
+				3E3DEAC12C30426200CA5999 /* Response.swift */,
 				3E3DEAB52C2FD42100CA5999 /* HTTPMethod.swift */,
 				3E3DEAB72C2FD44000CA5999 /* HTTPTask.swift */,
 				3E3DEAB92C2FD45400CA5999 /* HTTPHeader.swift */,
+				3E3DEABB2C2FD4D600CA5999 /* URLRequest+Encoding.swift */,
+				3E3DEABD2C2FDDC000CA5999 /* GBNetworkError.swift */,
+				3E3DEABF2C2FDE9200CA5999 /* APIClient.swift */,
 			);
 			path = GBNetwork;
 			sourceTree = "<group>";
@@ -206,7 +218,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E3DEABC2C2FD4D600CA5999 /* URLRequest+Encoding.swift in Sources */,
 				3E3DEAB82C2FD44000CA5999 /* HTTPTask.swift in Sources */,
+				3E3DEAC22C30426200CA5999 /* Response.swift in Sources */,
+				3E3DEABE2C2FDDC000CA5999 /* GBNetworkError.swift in Sources */,
+				3E3DEAC02C2FDE9200CA5999 /* APIClient.swift in Sources */,
 				3E3DEA9E2C2FD32300CA5999 /* GBNetwork.docc in Sources */,
 				3E3DEABA2C2FD45400CA5999 /* HTTPHeader.swift in Sources */,
 				3E3DEAB42C2FD3A200CA5999 /* RequestType.swift in Sources */,
@@ -373,6 +389,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -406,6 +423,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
